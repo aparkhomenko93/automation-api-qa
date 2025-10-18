@@ -1,0 +1,25 @@
+{
+  "name": "automation-api-qa",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aparkhomenko93/automation-api-qa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aparkhomenko93/automation-api-qa/issues"
+  },
+  "homepage": "https://github.com/aparkhomenko93/automation-api-qa#readme",
+  "devDependencies": {
+    "axios": "^1.12.2",
+    "jest": "^30.2.0"
+  }
+}
