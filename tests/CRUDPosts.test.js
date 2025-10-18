@@ -79,7 +79,7 @@ describe("Test Posts CRUD operations", () => {
         const postId = 1;
         const newTitle = 'foo123';
 
-        const response = await apiClient.put(`/posts/${postId}`, {title: newTitle});
+        const response = await apiClient.patch(`/posts/${postId}`, {title: newTitle});
 
         expect(response.status).toBe(200);
 
