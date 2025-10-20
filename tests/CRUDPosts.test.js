@@ -12,7 +12,7 @@ describe("Test Posts CRUD operations", () => {
         const response = await apiClient.get(`/posts/${postId}`);
         expect(response.status).toBe(200);
         expect(response.data).toEqual({
-            id: expect.any(Number),
+            id: postId,
             title: expect.any(String),
             body: expect.any(String),
             userId: expect.any(Number)
@@ -69,7 +69,7 @@ describe("Test Posts CRUD operations", () => {
         expect(response.status).toBe(200);
 
         expect(response.data).toEqual({
-            id: expect.any(Number),
+            id: postId,
             ...requestBody
         });
     })
@@ -86,6 +86,8 @@ describe("Test Posts CRUD operations", () => {
         //Check that title is updated
         expect(response.data).toHaveProperty("title", newTitle);
 
+        //Check that id is correct
+        expect(response.data).toMatchObject({id: postId});
     })
 
     //Delete post test
