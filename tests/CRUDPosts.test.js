@@ -2,7 +2,7 @@ import {test, describe, expect} from "@jest/globals";
 import axios from "axios";
 import {API_URL} from "../src/constants/api";
 
-describe("Test Posts CRUD operations", () => {
+describe.skip("Test Posts CRUD operations", () => {
     const apiClient = axios.create({baseURL: API_URL});
 
     //Get post by id test

@@ -20,6 +20,14 @@
   "homepage": "https://github.com/aparkhomenko93/automation-api-qa#readme",
   "devDependencies": {
     "axios": "^1.12.2",
-    "jest": "^30.2.0"
+    "jest": "^30.2.0",
+    "jest-html-reporter": "^4.3.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "axios-cookiejar-support": "^6.0.4",
+    "moment": "^2.30.1",
+    "tough-cookie": "^5.1.2",
+    "zod": "^4.1.12"
   }
 }
